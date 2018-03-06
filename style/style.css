@@ -1,0 +1,494 @@
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4 {
+	font-family: "Rancho", cursive;
+	color: #4b4b4b;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 2.5em;
+}
+
+h3 {
+	font-size: 1.7em;
+}
+
+h4 {
+	font-size: 1.3em;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+q {
+	margin: 2em;
+	line-height: 1.5em;
+	font-family: "Rancho", cursive;
+	font-size: 1.5em;
+	color: #04265e;
+}
+
+input {
+	border: 1px solid #0C9CE5;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+input[type="date"] {
+	padding: 4px;
+}
+
+select {
+	padding: 10px;
+	background-color: white;
+ }
+
+ option {
+	 padding: 10px;
+ }
+
+footer {
+	background-color: #0C9CE5;
+	width: 100%;
+	height: 100px;
+}
+
+hr {
+	height: 10px;
+	border: 0;
+	box-shadow: 0 5px 5px -5px #01389e inset;
+}
+
+.button {
+	padding: 12px;
+	border-radius: 5px;
+	border: 1px solid #5484e4;
+	color: #5484e4;
+	background: none;
+}
+
+.button:hover {
+	color: white;
+	background-color: #5484e4;
+}
+
+.button.primary {
+	border: 1px solid #27bd13;
+	background-color: #27bd13;
+	color: white;
+}
+
+.button.primary:hover {
+	background-color: white;
+	color: #27bd13;
+}
+
+.container {
+	width: 1080px;
+	margin: 0 auto;
+}
+
+.center-align {
+	text-align: center;
+}
+
+.left-align {
+	text-align: left;
+}
+
+.right-align {
+	text-align: right;
+}
+
+.justified {
+	text-align: justify;
+}
+
+.put-right {
+	float: right;
+}
+
+.put-left {
+	float:left;
+}
+
+.icon {
+	width: 15px;
+	height: 15px;
+}
+
+.giant {
+	font-size: 3.5em;
+}
+
+.small {
+	font-size: .9em;
+}
+
+.more {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+.content {
+	height: 85vh;
+}
+
+.detached {
+	margin:1em;
+}
+
+/* ========== NAVIGATION HEADER ======= */
+#navbar {
+	background: #fff;
+	z-index: 1;
+	width: 100%;
+}
+
+#navbar nav {
+	display: flex;
+	align-items: stretch;
+	justify-content: space-between;
+}
+
+#navbar ul {
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: stretch;
+}
+
+#navbar li {
+	display: block;
+	padding: 15px 20px;
+	color: #01389e;
+}
+
+#navbar li:hover{
+	background-color: #0C9CE5;
+	color: white;
+}
+
+#navbar a {
+	color: inherit;
+	text-decoration: none;
+}
+
+#logo-main {
+	width: 50px;
+	align-self: center;
+	margin-right: 4px;
+}
+
+#nav-left {
+	padding-left: 10px;
+	flex: 3;
+}
+
+#nav-right {
+	text-align: right;
+	justify-content: flex-end;
+	flex: 2;
+}
+
+/* =========== HEADLINE =============== */
+#jumbotron {
+	background: url("../img/vacation-small.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 70vh;
+	margin: 0;	
+}
+
+#jumbotron > .container {
+	height: 100%;
+	position: relative;
+}
+
+#headline-container {
+	float: right;
+	width: 40%;
+	height: 32%;
+	overflow: auto;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 80, .2);
+	border-radius: 10px;
+	padding: 1em;
+}
+
+#headline h1 {
+	font-size: 3em;
+	color: white;
+	text-shadow: 1px 1px 1px #272e3b;
+	padding-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-style: italic;
+	text-align: center;
+}
+
+#headline p {
+	color: white;
+	margin: 1.5em 0;
+	text-align: center;
+	text-shadow: 1px 1px 1px #272e3b;
+}
+
+#find-out {
+	text-align: center;
+	background-color: white;
+	color: #5484e4;
+	border: none;
+	text-decoration: none;
+	display: block;
+}
+
+/* ======= VACATION ========= */
+.vacation {
+	background-color: #f5f8ff;
+	padding-top: 1em;
+	padding-bottom: 2em;
+}
+
+.vacation > .container {
+	display: flex;
+}
+
+.vacation-place {
+	flex-basis: 33%;
+	justify-content: center;
+}
+
+.vacation-place img {
+	max-width: 300px;
+}
+
+.vacation-place p {
+	padding-right: 10%;
+	padding-left: 10%;
+}
+
+/* ======== VACATION PAGE ========= */
+#search-trip {
+	border-radius: 5px;
+	border: 1px solid #0C9CE5;
+	margin: 1em;
+	text-align: center;
+}
+
+#search-trip > * {
+	margin: .5em;
+}
+
+.vac-overview {
+	margin: 1em 0 2em 0;
+}
+
+.vac-overview-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.vac-agenda {
+	margin: .5em;
+	width: 250px;
+}
+
+.vac-agenda > * {
+	margin: .2em 0;
+}
+
+.vac-agenda .thumbnail {
+	width: 250px;
+}
+
+.vac-guide {
+	display: block;
+}
+
+.vac-price {
+	font-size: small;
+}
+
+/* ======== GUIDE ======= */
+.guide {
+	margin: 2em 0;
+}
+
+.item-wrapper {
+	margin-top: 1.5em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.item-thumbnail {
+	flex: 1;
+}
+
+.item-thumbnail img {
+	width: 100px;
+	border-radius: 100%;
+}
+
+.item-info {
+	flex: 3;
+	margin-left: 10%;
+}
+
+.item-info > table {
+	width: 50%;
+	text-align: left;
+}
+
+/* =========== GUIDE PAGE ========== */
+#guide-rules {
+	width: 65%;
+	padding-bottom: 2em;
+}
+
+#guide-blog {
+	width: 30%;
+}
+
+/* =========== FOOTER =========== */
+footer > .container {
+	display: flex;
+	justify-content: space-between;
+	color: white;
+}
+
+footer ul {
+	padding: 0;
+}
+
+footer li {
+	display: inline;
+	list-style: none;
+	padding: 1em;
+}
+
+@media all and (max-width: 1080px){
+	
+	/* ========== NAVIGATION HEADER ======= */
+	.container {
+		width: 90%;
+	}
+
+	#navbar {
+		position: static;
+	}
+	
+	#navbar nav, ul {
+		flex-direction: column;
+	}
+
+	#nav-right {
+		text-align: left;
+		justify-content: flex-start;
+	}
+
+	nav > a {
+		text-align: center;
+	}
+
+	#logo-main {
+		height: 100px;
+		width: auto;
+		margin: 0;
+	}
+
+	/* ======= HEADLINE ======== */
+	#jumbotron {
+		top: 20%;
+	}
+
+	#headline-container {
+		height: 35%;
+	}
+
+	/* ======== VACATION ======= */
+	.vacation > .container {
+		flex-direction: column;
+	}
+
+	.vacation img {
+		max-width: 500px;
+	}
+
+	/* ======== GUIDE ========= */
+	.item-wrapper {
+		flex-direction: column;
+	}
+
+	.item-wrapper > * {
+		width: 80%;
+	}
+
+	.item-thumbnail > img {
+		max-width: 200px;
+	}
+
+	.item-info {
+		margin: 2em;
+	}
+
+	.item-info > table {
+		margin-left: auto;
+		margin-right: auto;
+		width: 70%;
+	}
+
+	.item-info > q {
+		display: none;
+	}
+
+}
+
+@media all and (max-width: 600px) {
+	#headline-container {
+		float: none;
+		left: 0;
+		width: 70%;
+		height: 40%;
+	}
+
+	
+	.vacation-place img {
+		max-width: 200px;
+	}
+}
+
+@media all and (max-height: 720px) {
+	#jumbotron {
+		height: 100vh;
+	}
+} 
+
+@media all and (min-width: 1920px) {
+	#headline-container {
+		height: 32%;
+	}
+}
